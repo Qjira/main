@@ -25,23 +25,29 @@ public class practice {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
+		//配列strの作成とa～jまでの格納
 		String str[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
+		//a～jまで繰り返し出力を行う
 		for (int i = 0; i < 10; i++) {
+			//strがe以降のアルファベットになったら繰り返し処理を止める
 			if(i >= 4) {
 				break;
 			}
-			System.out.println(str[i]);
-		}
-		
-		System.out.println();
-		
-		for (int i = 0; i < 10; i++) {
-			if(i == 8) {
-				continue;
-			}
+			//出力
 			System.out.println(str[i]);
 		}
 
+		System.out.println();
+
+		//a～jまで繰り返し出力を行う
+		for (int i = 0; i < str.length; i++) {
+			//iの出力のみ飛ばす
+			if(i == 8) {
+				continue;
+			}
+			//出力
+			System.out.println(str[i]);
+		}
 	}
 
 }

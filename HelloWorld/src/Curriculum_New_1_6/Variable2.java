@@ -1,19 +1,19 @@
 package Curriculum_New_1_6;
-
+//Randomクラスのインポート
 import java.util.Random;
 
 public class Variable2 {
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 //		問１）
 //		変数 x を宣言し、「3」を代入して下さい。
 //		変数 x に自己代入を使って「20」を掛け算して下さい。
 //		その後 x の値をコンソールに表示して下さい。
 		
+		//変数xの宣言と3の代入
 		int x = 3;
+		//ｘに x * 20 の値を代入
 		x *= 20;
+		//ｘの出力
 		System.out.println(x);
 		
 //		問２）
@@ -24,10 +24,15 @@ public class Variable2 {
 //		④デクリメント演算子を適用して数値を 1 減らす。
 //		⑤コンソールに変数 i の値を表示する。
 
+		//iの宣言と100の代入
 		int i = 100;
+		//インクリメント演算子を適応して1増やす
 		i++;
+		//結果の出力
 		System.out.println(i);
+		//インクリメント演算子を適応して1減らす
 		i--;
+		//結果の出力
 		System.out.println(i);
 		
 //		問３）
@@ -40,7 +45,9 @@ public class Variable2 {
 
 		System.out.println("あなたの年齢を予想します");
 		
+		//rndのインスタンス化
 		Random rnd = new Random();
+		//変数ageに0～100の中の値をランダムに代入
 		int age = rnd.nextInt(101);
 		
 		System.out.println("あなたの年齢はおそらく" + age + "歳ですね？");
