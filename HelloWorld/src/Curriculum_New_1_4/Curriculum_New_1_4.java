@@ -6,7 +6,7 @@ public class Curriculum_New_1_4 {
 
 		// Q1 下記9個をクラス変数として宣言のみしてください
 		//		・バイト型・短整数型・整数型・長整数型
-		// 	・単精度浮動小数点数型・倍精度浮動小数点数型
+		// 	　　・単精度浮動小数点数型・倍精度浮動小数点数型
 		//   	・文字型・文字列型
 		//	 	・ブーリアン型
 		
@@ -51,7 +51,7 @@ public class Curriculum_New_1_4 {
 		b = 10;
 		s = 100;
 		i = 1000;
-		l = 10000;
+		l = 10000l;
 		f = 9.5f;
 		dbl = 10.5;
 		c = 'a';
@@ -71,8 +71,8 @@ public class Curriculum_New_1_4 {
 		
 		//10+100+1000+10000＝11110
 		System.out.println(b + s +i + l);
-		//小数点を表示させるためにdouble型の変数を使用
-		System.out.println(dbl * 2 - 1);
+		//小数点を表示させるためにdouble型とfloat型の変数を使用
+		System.out.println(f + dbl);
 		//各変数の間にスペースを作るため各変数間で" "を結合
 		System.out.println(c + " " + str + " " + bool);
 		//数字をすべて足す
@@ -88,10 +88,10 @@ public class Curriculum_New_1_4 {
 		// 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
 		//「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください。
 		
+		//変数numがString型となっているためint型に修正
 		int num = 20;
 		int num1 = 23;
 		
-		//int型がString型に自動変換されるため先に（）内で計算を行う
 		System.out.println("ハローJAVA" + (num + num1));
 
 	}
