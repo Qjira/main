@@ -19,12 +19,12 @@ public class practice {
 	public static void main(String[] args) {
 		//while文で100回処理を行うために用いる変数iの宣言と1の代入
 		int i = 1;
-		//100階で処理を止める
+		//100回で処理を止める
 		while(i < 101) {
 			//偶数を判別するための処理
 			if(i % 2 == 0) {
 				System.out.println(i + "は偶数です");
-				//帰趨を判別するための処理
+				//奇数を判別するための処理
 			}else {
 				System.out.println(i + "は期数です");
 			}
