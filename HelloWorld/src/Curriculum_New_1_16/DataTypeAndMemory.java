@@ -11,9 +11,9 @@ public class DataTypeAndMemory {
 		System.out.println(str);
 
 		// Q2：「Hello Java」という文字列を変数に代入してコンソールに出力してください。
-
+		str = "Hello Java";
 		//Hello Javaの出力
-		System.out.println("Hello Java");
+		System.out.println(str);
 
 		// Q3：富士山の標高を整数で変数に代入してコンソールに出力してください。
 
