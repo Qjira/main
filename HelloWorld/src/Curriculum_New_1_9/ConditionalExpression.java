@@ -54,7 +54,7 @@ public class ConditionalExpression {
 		//		①変数 isTired を定義し、0 か 1 を代入する。（どちらを代入しても構わない。）
 
 		//変数isTiredの宣言と0の代入
-		int isTired = 0;
+		int isTired = 1;
 
 		//		②変数 study を定義し、文字列 "カリキュラム" を代入する。
 
@@ -74,8 +74,6 @@ public class ConditionalExpression {
 		//		④もし変数 isTired が 0 であれば、変数 study を利用して「カリキュラムを続けます。」と表示する。
 
 		//三項演算子　条件式 ? trueの場合の戻り値 : falseの場合の戻り値　を用いて出力
-		System.out.println(isTired == 0 ? study + "を続けます。" : null);
-
-
+		System.out.println(isTired == 0 ? study + "を続けます。" : "");
 	}
 }
