@@ -32,22 +32,23 @@ public class Animal {
 	public void setAnimalName(String animalName) {
 		this.animalName = animalName;
 	}
-	//setterメソッド
-	public void setHeight(double height) {
-		this.height = height;
-	}
-	//setterメソッド
-	public void setSpeed(int speed) {
-		this.speed = speed;
-	}
-	
 	//getterメソッド
 	public String getAnimalName() {
 		return this.animalName;
 	}
+	
+	//setterメソッド
+	public void setHeight(double height) {
+		this.height = height;
+	}
 	//getterメソッド
-	public double getHeight() {
-		return this.height;
+		public double getHeight() {
+			return this.height;
+		}
+	
+	//setterメソッド
+	public void setSpeed(int speed) {
+		this.speed = speed;
 	}
 	//getterメソッド
 	public int getSpeed() {
