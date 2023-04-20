@@ -21,18 +21,21 @@ public class sample {
 		//インスタンス化
 		Random rnd = new Random();
 		//iの宣言と1～12のランダムな数字の代入
-		int i = rnd.nextInt(12) + 1; 
+		int i = rnd.nextInt(13) + 1; 
 		//switch文
 		switch(i) {
 		//iが2の場合の処理
 		case 2:
-			System.out.println("2月は28日です。");
+			System.out.println(i + "月は28日です。");
 			break;
-			//iが4の場合の処理
+			//iが4,6,9,11の場合の処理
 		case 4:
-			System.out.println("4月は30日です。");
+		case 6:
+		case 9:
+		case 11:
+			System.out.println(i + "月は30日です。");
 			break;
-			//iが2,4以外の値の場合の処理
+			//iが上記ケース以外の値の場合の処理
 		default:
 			System.out.println(i + "月は31日です。");
 		}
