@@ -14,7 +14,6 @@ public class Theme2 {
  */
 	//インスタンスの生成
 		Animal animal1 = new Animal(null, 0.0d, 0);
-		animal1.animal();
 		
 		//setterでanimal1の各変数を代入
 		animal1.setAnimalName("ライオン");

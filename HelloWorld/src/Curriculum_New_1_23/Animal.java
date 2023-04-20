@@ -14,20 +14,6 @@ public class Animal {
 		this.speed = speed;
 	}
 	
-	/* 動物名：○○
-	 * 体長：○○m
-	 * 速度：○○km/h
-	 * 上記内容の出力メソッド
-	 */
-	public void animal() {
-		//nullチェック
-		if(this.animalName != null) {
-		System.out.println("動物名：" + this.animalName);
-		System.out.println("体長：" + this.height);
-		System.out.println("速度：" + this.speed);
-		}
-	}
-	
 	//setterメソッド
 	public void setAnimalName(String animalName) {
 		this.animalName = animalName;
