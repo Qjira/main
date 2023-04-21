@@ -1,10 +1,10 @@
-package Curriculum_New_1_31;
+package Curriculum_New_1_33;
 
 public class Vehicle {
 	//インスタンスフィールドを定義
 	private String owner;
 
-	//setter,getter処理
+	//ownerのsetter,getter処理
 	public String getOwner() {
 		return owner;
 	}

@@ -1,8 +1,9 @@
-package Curriculum_New_1_31;
+package Curriculum_New_1_33;
 
 public class Person {
 	// インスタンスフィールドを定義
-	private String name;
+	private String firstName;
+	private String lastName;
 	private int age;
 	private double height;
 	private double weight;
@@ -11,50 +12,52 @@ public class Person {
 	public static int count = 0;
 
 	// コンストラクタを定義しインスタンスフィールドに値をセット
-	Person(String name, int age, double height, double weight){
-		this.name = name;
+	Person(String firstName, String lastName, int age, double height, double weight){
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.age = age;
 		this.height = height;
-		this.weight = weight; 
+		this.weight = weight;
+		//生成されるたびに人数をカウント
+		Person.count++;
 	}
 
 	//BMIの計算をするメソッド
 	public double bmi() {
 		return this.weight / this.height / this.height;
 	}
+	
+	//ファーストネームトラストネームの連結
+	public String fullName(){
+		return this.firstName + this.lastName;
+	}
+
 
 	//自己紹介文を出力するメソッド
 	public void print() {
-		System.out.println("私の名前は" + this.getName() + "です");
+		System.out.println("私の名前は" + this.fullName() + "です");
 		System.out.println("年は" + this.age + "です");
 		System.out.println("BMIは" + ((double)Math.round(this.bmi() * 10)) / 10 + "です");
-		//生成されるたびに人数をカウント
-		count++;
+		
 	}
 
 	//カウントした数を返すメソッド
 	public static void printCount() {
 		System.out.println("合計" + count + "人です");
+
 	}
-	//車の購入者の表示
+	
+	//車の購入者を表示
 	public void buy(Car car) {
 		//carクラスのsetOwnerメソッドの呼び出し
-		car.setOwner(this.name);
+		car.setOwner(this.fullName());
 		System.out.println(car.getOwner() + "が購入しました");
 	}
 	
 	//自転車の購入者の表示
 	public void buy(Bicycle bicycle) {
 		//bicycleクラスのsetOwnerメソッドの呼び出し
-		bicycle.setOwner(this.name);
+		bicycle.setOwner(this.fullName());
 		System.out.println(bicycle.getOwner() + "が購入しました");
-	}
-	
-	//nameのsetter,getter処理
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
 	}
 }
