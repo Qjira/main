@@ -41,7 +41,7 @@ public class Practice {
 		//科目の平均値を求める処理を科目数分繰り返し処理
 		for(int i = 0; i < sumTest.length; i++) {
 			double avgTest = (double)sumTest[i] /  + test.length; 
-			System.out.println(curriculum[i] + "の平均点は" + Math.round(avgTest * 10 / 10)  + "です。");
+			System.out.println(curriculum[i] + "の平均点は" + (int)Math.floor(avgTest) + "点です。");
 		}
 	}
 
