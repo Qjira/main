@@ -19,7 +19,7 @@ public class Practice2 {
 		int a[] = {1, 2, 3, 4, 5};
 
 		//参照型配列bの作成
-		int[] b = new int[1];
+		int[] b = a;
 		//b[0]に3を代入
 		b[0] = 3;
 		//bで3を出力
