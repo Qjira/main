@@ -26,7 +26,7 @@ public class practice {
 				System.out.println(i + "は偶数です");
 				//奇数を判別するための処理
 			}else {
-				System.out.println(i + "は期数です");
+				System.out.println(i + "は奇数です");
 			}
 			//100回処理を行うために1から1回の処理が終わるごとにiにプラス1する
 			i++;
