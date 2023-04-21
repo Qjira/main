@@ -20,10 +20,9 @@ public class Practice2 {
 
 		//参照型配列bの作成
 		int[] b = a;
-		//b[0]に3を代入
-		b[0] = 3;
+		
 		//bで3を出力
-		System.out.println(b[0]);
+		System.out.println(b[2]);
 
 		//配列a[3]の値を10に上書き
 		a[3] = 10;
