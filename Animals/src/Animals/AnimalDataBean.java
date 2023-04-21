@@ -6,8 +6,7 @@ public class AnimalDataBean {
 	private String animalName;
 	private double height;
 	private int speed;
-	private String scientificName;
-	
+
 	//動物名
 	public void setAnimalName(String animalName) {
 		this.animalName = animalName;
@@ -30,13 +29,5 @@ public class AnimalDataBean {
 	}
 	public int getSpeed() {
 		return this.speed;
-	}
-	
-	//学名
-	public void setScienticName(String scienticName) {
-		this.scientificName = scientificName;
-	}
-	public String getScienticName() {
-		return this.scientificName;
 	}
 }
