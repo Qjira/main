@@ -21,20 +21,26 @@ public class JpPrefSortMain {
 	 	都道府県がソートされてコンソールに出力されるように作ってください
 	   	※Packageを2つ作ってください
 	   	※複数選択できるようにしてください
+
+	   	例:
+   		8
+   		5
+   		9
+   		と入力された場合（昇順）
 	 */
-	
+
 	public static void main(String[] args) {
-		
+
 		// インスタンス化
 		Scanner scanner = new Scanner(System.in);
 		JpPrefSort prefSort = new JpPrefSort();
-		
+
 		// 入力数を入力
 		System.out.println("数字をいくつ入力しますか");
 		int count = scanner.nextInt();
 		// 変数sortNumの宣言と初期化
 		int sortNum = 0;
-		
+
 		/*
 		 * inputメソッドで入力数の分だけ0～10を入力する処理を繰り返す
 		 * 入力された値に重複がある場合に重複を削除しafSortNumsリストに格納
@@ -44,23 +50,23 @@ public class JpPrefSortMain {
 		// 昇順か降順か選択してもらう
 		System.out.println("昇順か降順か選んでください");
 		String sort = scanner.next();
-		
+
 		switch (sort) {
 		// 昇順が入力された場合
 		case "昇順":
-		// 昇順処理
+			// 昇順処理
 			afSortNums = JpPrefSort.sort(afSortNums);
 			break;
-		// 降順が選択された場合
+			// 降順が選択された場合
 		case "降順":
-		// 降順処理
+			// 降順処理
 			JpPrefSort.reverseSort(afSortNums);
 			break;
 		}
-		
+
 		// afSortNumsに格納された要素数分繰り返し処理
 		for(int i = 0; i < afSortNums.size(); i++ ) {
-		// 各県の詳細表示処理
+			// 各県の詳細表示処理
 			prefSort.prefData(afSortNums.get(i));
 		}
 	}
