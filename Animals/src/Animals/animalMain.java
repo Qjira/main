@@ -8,18 +8,19 @@ public class animalMain {
 	 */
 
 	public static void main(String[] args) {
-		//スキャナーの初期化
+		
+		// スキャナーの初期化
 		Scanner scanner = new Scanner(System.in);
 
-		//文字の入力指示
+		// 文字の入力指示
 		System.out.println("コンソールに文字を入力してください");
-		//文字の入力処理
+		// 文字の入力処理
 		String data = scanner.next();
 		System.out.println();
 
-		//インスタンス化
+		// インスタンス化
 		AnimalData animData = new AnimalData(data);
-		//入力された文字列を分割し出力するメソッドの呼び出し
+		// 入力された文字列を分割し出力するメソッドの呼び出し
 		animData.printAnimData();
 	}
 
