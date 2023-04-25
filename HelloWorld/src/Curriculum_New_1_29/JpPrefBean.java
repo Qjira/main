@@ -1,8 +1,7 @@
-package Curriculum_New_1_29_30;
+package Curriculum_New_1_29;
 
 public class JpPrefBean {
 /*
- 	
  	0, "北海道:札幌市:83424"
 	1, "青森県:青森市:9646"
 	2, "岩手県:盛岡市:15275"
