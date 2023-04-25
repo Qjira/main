@@ -30,5 +30,4 @@ public class AnimalDataBean {
 	public int getSpeed() {
 		return this.speed;
 	}
-	
 }

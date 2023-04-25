@@ -22,7 +22,6 @@ public class animalMain {
 
 		// インスタンス化
 		AnimalData animData = new AnimalData(data);
-		
 		// 入力された文字列を分割し出力するメソッドの呼び出し
 		animData.printAnimData();
 	}
