@@ -11,6 +11,7 @@ public class AnimalData {
 
 	// インスタンス化
 	AnimalDataBean animDataBean = new AnimalDataBean();
+	
 	// 入力された文字列を分割し出力するメソッド
 	public void printAnimData() {
 		
