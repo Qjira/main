@@ -6,7 +6,8 @@ public class RandomStatus {
 	Random rnd = new Random();
 	//フィールド変数
 	private String name;
-
+	
+	//コンストラクタの作成
 	public RandomStatus(String name){
 		this.name = name;
 	}
@@ -18,18 +19,23 @@ public class RandomStatus {
 		//ランダム(0～999)
 		for(int i = 0; i < 5; i++) {
 			switch(i){
+			//HP生成
 			case 0:
 				status.setHp(rnd.nextInt(1000));
 				break;
+			//MP生成
 			case 1:
 				status.setMp(rnd.nextInt(1000));
 				break;
+			//攻撃力生成
 			case 2:	
 				status.setAtk(rnd.nextInt(1000));
 				break;
+			//素早さ生成
 			case 3:	
 				status.setAgi(rnd.nextInt(1000));
 				break;
+			//防御力生成
 			case 4:
 				status.setDef(rnd.nextInt(1000));
 				break;

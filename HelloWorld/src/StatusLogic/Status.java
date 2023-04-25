@@ -3,7 +3,6 @@ package StatusLogic;
 public class Status {
 	
 	//フィールド変数
-		
 	private int hp;
 	private int mp;
 	private int atk;

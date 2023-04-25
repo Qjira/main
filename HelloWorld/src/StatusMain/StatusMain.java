@@ -33,10 +33,15 @@ public class StatusMain {
 		//scannerの初期化
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("何人：");
-		int j = scanner.nextInt();
+		/*
+		 * ランダム出力の確認
+		 *
+		 *System.out.println("何人：");
+		 *int j = scanner.nextInt();
+		 * 
+		 *for(int i = 0; i < j; i++) {
+		 */
 		
-		for(int i = 0; i < j; i++) {
 		//名前：の出力
 		System.out.print("名前：");
 		//名前の入力
@@ -46,6 +51,7 @@ public class StatusMain {
 		RandomStatus person1 = new RandomStatus(name);
 		//ステータスを表示するためのメソッドの呼び出し
 		person1.status();
-		}
+		
+		//}
 	}
 }
