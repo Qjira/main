@@ -2,12 +2,12 @@ package Animals;
 
 public class AnimalDataBean {
 	
-	// フィールド変数
+	//フィールド変数
 	private String animalName;
 	private double height;
 	private int speed;
 
-	// 動物名
+	//動物名
 	public void setAnimalName(String animalName) {
 		this.animalName = animalName;
 	}
@@ -15,7 +15,7 @@ public class AnimalDataBean {
 		return this.animalName;
 	}
 	
-	// 体長
+	//体長
 	public void setHeight(double height) {
 		this.height = height;
 	}
@@ -23,7 +23,7 @@ public class AnimalDataBean {
 		return this.height;
 	}
 	
-	// 速度
+	//速度
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
