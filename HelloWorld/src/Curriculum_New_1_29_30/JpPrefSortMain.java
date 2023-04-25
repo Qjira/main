@@ -22,15 +22,17 @@ public class JpPrefSortMain {
 	   	※Packageを2つ作ってください
 	   	※複数選択できるようにしてください
 	 */
+	
 	public static void main(String[] args) {
-		//インスタンス化
+		
+		// インスタンス化
 		Scanner scanner = new Scanner(System.in);
 		JpPrefSort prefSort = new JpPrefSort();
 		
-		//入力数を入力
+		// 入力数を入力
 		System.out.println("数字をいくつ入力しますか");
 		int count = scanner.nextInt();
-		//変数sortNumの宣言と初期化
+		// 変数sortNumの宣言と初期化
 		int sortNum = 0;
 		
 		/*
@@ -39,26 +41,26 @@ public class JpPrefSortMain {
 		 */
 		ArrayList<Integer> afSortNums = JpPrefSort.inputNum(count,sortNum,scanner);
 
-		//昇順か降順か選択してもらう
+		// 昇順か降順か選択してもらう
 		System.out.println("昇順か降順か選んでください");
 		String sort = scanner.next();
 		
 		switch (sort) {
-		//昇順が入力された場合
+		// 昇順が入力された場合
 		case "昇順":
-			//昇順処理
+		// 昇順処理
 			afSortNums = JpPrefSort.sort(afSortNums);
 			break;
-		//降順が選択された場合
+		// 降順が選択された場合
 		case "降順":
-			//降順処理
+		// 降順処理
 			JpPrefSort.reverseSort(afSortNums);
 			break;
 		}
 		
-		//afSortNumsに格納された要素数分繰り返し処理
+		// afSortNumsに格納された要素数分繰り返し処理
 		for(int i = 0; i < afSortNums.size(); i++ ) {
-			//各県の詳細表示処理
+		// 各県の詳細表示処理
 			prefSort.prefData(afSortNums.get(i));
 		}
 	}

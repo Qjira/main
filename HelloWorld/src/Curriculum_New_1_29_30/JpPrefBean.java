@@ -16,6 +16,7 @@ public class JpPrefBean {
 	10, "埼玉県:さいたま市:3798"
  */
 	
+	// 県名を格納する配列
 	private String[] pref = {
 		"北海道",
 		"青森県",
@@ -29,7 +30,8 @@ public class JpPrefBean {
 		"群馬県",
 		"埼玉県"
 	};
-
+	
+	// 県庁所在地を格納する配列
 	private String[] prefCap = {
 		"札幌市",
 		"青森市",
@@ -44,6 +46,7 @@ public class JpPrefBean {
 		"さいたま市"
 	};
 	
+	// 面積を格納する配列
 	private double[] prefArea = {
 		83424,
 		9646,
@@ -58,7 +61,7 @@ public class JpPrefBean {
 		3798
 	};
 	
-	//県名のsetter,getter処理
+	// 県名のsetter,getter処理
 	public void setPref(String[] pref) {
 		this.pref = pref;
 	}
@@ -66,7 +69,7 @@ public class JpPrefBean {
 		return pref[sortNum];
 	}
 
-	//市名のsetter,getter処理
+	// 市名のsetter,getter処理
 	public void setPrefCap(String[] prefCap) {
 		this.prefCap = prefCap;
 	}
@@ -74,7 +77,7 @@ public class JpPrefBean {
 		return prefCap[sortNum];
 	}
 
-	//面積のsetter,getter処理
+	// 面積のsetter,getter処理
 	public void setPrefArea(double[] prefArea) {
 		this.prefArea = prefArea;
 	}
