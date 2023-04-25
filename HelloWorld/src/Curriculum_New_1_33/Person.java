@@ -8,7 +8,7 @@ public class Person {
 	private double height;
 	private double weight;
 
-	//クラスフィールドを定義（インスタンスの数を数えるため）
+	// クラスフィールドを定義（インスタンスの数を数えるため）
 	public static int count = 0;
 
 	// コンストラクタを定義しインスタンスフィールドに値をセット
@@ -18,22 +18,22 @@ public class Person {
 		this.age = age;
 		this.height = height;
 		this.weight = weight;
-		//生成されるたびに人数をカウント
+	// 生成されるたびに人数をカウント
 		Person.count++;
 	}
 
-	//BMIの計算をするメソッド
+	// BMIの計算をするメソッド
 	public double bmi() {
 		return this.weight / this.height / this.height;
 	}
 	
-	//ファーストネームトラストネームの連結
+	// ファーストネームとラストネームの連結
 	public String fullName(){
 		return this.firstName + this.lastName;
 	}
 
 
-	//自己紹介文を出力するメソッド
+	// 自己紹介文を出力するメソッド
 	public void print() {
 		System.out.println("私の名前は" + this.fullName() + "です");
 		System.out.println("年は" + this.age + "です");
@@ -41,22 +41,22 @@ public class Person {
 		
 	}
 
-	//カウントした数を返すメソッド
+	// カウントした数を返すメソッド
 	public static void printCount() {
 		System.out.println("合計" + count + "人です");
 
 	}
 	
-	//車の購入者を表示
+	// 車の購入者を表示
 	public void buy(Car car) {
-		//carクラスのsetOwnerメソッドの呼び出し
+	// carクラスのsetOwnerメソッドの呼び出し
 		car.setOwner(this.fullName());
 		System.out.println(car.getOwner() + "が購入しました");
 	}
 	
-	//自転車の購入者の表示
+	// 自転車の購入者の表示
 	public void buy(Bicycle bicycle) {
-		//bicycleクラスのsetOwnerメソッドの呼び出し
+	// bicycleクラスのsetOwnerメソッドの呼び出し
 		bicycle.setOwner(this.fullName());
 		System.out.println(bicycle.getOwner() + "が購入しました");
 	}
