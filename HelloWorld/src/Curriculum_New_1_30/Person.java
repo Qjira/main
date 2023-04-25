@@ -7,7 +7,7 @@ public class Person {
 	private double height;
 	private double weight;
 	
-	//クラスフィールドを定義（インスタンスの数を数えるため）
+	// クラスフィールドを定義（インスタンスの数を数えるため）
 	private static int count;
 	
 	// コンストラクタを定義しインスタンスフィールドに値をセット
@@ -18,21 +18,21 @@ public class Person {
 		this.weight = weight; 
 	}
 	
-	//BMIの計算をするメソッド
+	// BMIの計算をするインスタンスメソッド
 	public double bmi() {
 		return this.weight / this.height / this.height;
 	}
 	
-	//自己紹介文を出力するメソッド
+	// 自己紹介文を出力するインスタンスメソッド
 	public void print() {
 		System.out.println("私の名前は" + this.name + "です");
 		System.out.println("年は" + this.age + "です");
 		System.out.println("BMIは" + ((double)Math.round(this.bmi() * 10)) / 10 + "です");
-	//出力されるたびに人数をカウント
+	// 出力されるたびに人数をカウント
 		count++;
 	}
 	
-	//カウントした数を返すメソッド
+	// カウントした数を返すクラスメソッド
 	public static int count() {
 		return count;
 		
