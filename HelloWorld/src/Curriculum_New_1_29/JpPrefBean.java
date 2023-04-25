@@ -1,4 +1,4 @@
-package Curriculum_New_1_29_30;
+package Curriculum_New_1_29;
 
 public class JpPrefBean {
 /*
