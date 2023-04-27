@@ -26,12 +26,12 @@ public class JpPrefSort {
 	// 県のデータの出力
 	public void prefData(int sortNum) {
 		// 都道府県名：○○
-		System.out.println("都道府県名：" + prefBean.getPrefData(sortNum)[0]);
+		System.out.println("都道府県名：" + prefBean.getPrefData()[sortNum][0]);
 		// 県庁所在地：○○
-		System.out.println("県庁所在地：" + prefBean.getPrefData(sortNum)[1]);
+		System.out.println("県庁所在地：" + prefBean.getPrefData()[sortNum][1]);
 		// 面積：○○km2
 		//Stringからdoubleに型変換
-		System.out.println("面積：" + Double.parseDouble(prefBean.getPrefData(sortNum)[2]) + "km2");
+		System.out.println("面積：" + Double.parseDouble(prefBean.getPrefData()[sortNum][2]) + "km2");
 		System.out.println();
 	}
 	// 指定された数だけ0～10の値を入力する

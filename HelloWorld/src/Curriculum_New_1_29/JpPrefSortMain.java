@@ -69,8 +69,6 @@ public class JpPrefSortMain {
 			// 各県の詳細表示処理
 			prefSort.prefData(afSortNums.get(i));
 		}
-		
-		
 	}
 
 
