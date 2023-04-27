@@ -55,8 +55,6 @@ public class JpPrefSort {
 		Set<Integer> tmpSet = new LinkedHashSet<Integer>(beforSortNums);
 		ArrayList<Integer> afterSortNums = new ArrayList<Integer>(tmpSet);
 
-		// 重複が削除されているか確認
-		// System.out.println(afterSortNums);
 		return afterSortNums; 
 	}
 

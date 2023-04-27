@@ -55,7 +55,7 @@ public class JpPrefSortMain {
 		// 昇順が入力された場合
 		case "昇順":
 			// 昇順処理
-			afSortNums = JpPrefSort.sort(afSortNums);
+			JpPrefSort.sort(afSortNums);
 			break;
 			// 降順が選択された場合
 		case "降順":
