@@ -26,8 +26,8 @@ public class Person {
 	// 自己紹介文を出力するメソッド
 	public void print() {
 		System.out.println("私の名前は" + this.getName() + "です");
-		System.out.println("年は" + this.age + "です");
-		System.out.println("BMIは" + ((double)Math.round(this.bmi() * 10)) / 10 + "です");
+		System.out.println("年は" + this.age + "歳です");
+		System.out.println("BMIは" + Math.floor(this.bmi()) + "です");
 	// 生成されるたびに人数をカウント
 		count++;
 	}

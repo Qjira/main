@@ -28,7 +28,6 @@ public class Main {
 		person2.buy(bicycle);
 		
 		// 合計人数の出力
-		System.out.println("合計" + Person.count + "人です");
 		Person.printCount();
 	}
 }
