@@ -12,6 +12,14 @@ public class Person {
 	public static int count = 0;
 
 	// コンストラクタを定義しインスタンスフィールドに値をセット
+	Person(String firstName,  int age, double height, double weight){
+		this.firstName = firstName;
+		this.age = age;
+		this.height = height;
+		this.weight = weight;
+	}
+	
+	// lastNameを追加してコンストラクタをオーバーロード
 	Person(String firstName, String lastName, int age, double height, double weight){
 		this.firstName = firstName;
 		this.lastName = lastName;
