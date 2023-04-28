@@ -37,7 +37,7 @@ public class Person {
 	public void print() {
 		System.out.println("私の名前は" + this.fullName() + "です");
 		System.out.println("年は" + this.age + "です");
-		System.out.println("BMIは" + ((double)Math.round(this.bmi() * 10)) / 10 + "です");
+		System.out.println("BMIは" + Math.floor(this.bmi()) + "です");
 		
 	}
 
